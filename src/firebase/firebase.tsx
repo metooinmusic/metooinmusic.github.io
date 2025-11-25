@@ -10,6 +10,8 @@ const config = {
   appId: import.meta.env.VITE_APP_ID
 };
 
+console.log('config', config);
+
 const app = firebase.initializeApp(config);
 
 export const db = getFirestore(app);
