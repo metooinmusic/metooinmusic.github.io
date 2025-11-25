@@ -99,14 +99,13 @@ function About() {
           <h4>Impressum</h4>
             <p>
               Elisabeth Treydte<br />
-              Klemensborn 39<br />
-              Folkwang Universität der Künste< br/>
-              45239 Essen <br />
+              Fußhain 14<br />
+              61197 Florstadt <br />
             </p>
           <h4>Kontakt</h4>
             <p>
               Telefon: 015117204900 <br />
-              E-mail: elisabeth.treydte@folkwang-uni.de <br />
+              E-mail: e.treydte@web.de <br />
             </p>
           <h4>Datenschutzerklärung</h4>
             <p><a href={Datenschutz} target='_blank'>Herunterladen</a></p>
