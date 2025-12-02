@@ -104,8 +104,7 @@ function About() {
             </p>
           <h4>Kontakt</h4>
             <p>
-              Telefon: 015117204900 <br />
-              E-mail: e.treydte@web.de <br />
+              E-mail: info@mappingmetooinmusic.de <br />
             </p>
           <h4>Datenschutzerklärung</h4>
             <p><a href={Datenschutz} target='_blank'>Herunterladen</a></p>
