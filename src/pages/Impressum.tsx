@@ -39,31 +39,18 @@ function Impressum() {
       maxHeight: 'calc(100vh - 200px)',
       overflow: 'auto',
       marginTop: screenDimensions.isMobile ? '100px' : '100px',
-      boxShadow: '0px 10px 20px rgba(77, 97, 108, .24)',
-      borderRadius: '4px',
-      backgroundColor: Theme.light.primary,
+      backgroundColor: Theme.light.background,
+      border: 'none',
+      '& p': {
+        fontSize: '9px',
+        color: Theme.light.secondaryText,
+      },
       '& a': {
         color: Theme.light.tertiary,
         textDecorationColor: Theme.light.tertiary,
         fontWeight: 600
       }
     },
-    para: {
-      textAlign:'left'
-    },
-    linkbar: {
-      width: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-    },
-    linkItems: {
-      marginTop: '-20px',
-      display: 'flex',
-      flexDirection: 'row',
-    },
-    linkItem: {
-      margin: '0px 12px',
-    }
   };
 
   useEffect(() => {
@@ -74,21 +61,19 @@ function Impressum() {
     <>
       <Container sx={show ? { ...styles.parent, ...styles.show } : { ...styles.parent, ...styles.hide }}>
         <Card sx={styles.card}>
-        <div>
-            <h3>Impressum</h3>
+            <h5>Impressum</h5>
             <p>
                 Elisabeth Treydte<br />
                 Fußhain 14<br />
                 61197 Florstadt <br />
                 </p>
-            <h4>Kontakt</h4>
+            <h5>Kontakt</h5>
                 <p>
                 E-mail: info@mappingmetooinmusic.de <br />
                 </p>
-            <h4>Datenschutzerklärung</h4>
+            <h5>Datenschutzerklärung</h5>
                 <p><a href={Datenschutz} target='_blank'>Herunterladen</a></p>
             <br />
-        </div>
         </Card>
       </Container>
     </>
