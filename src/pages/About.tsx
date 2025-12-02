@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import Theme from '../constants/Theme';
 import useResizer from '../utils/useResizer';
-import Datenschutz from '../assets/Datenschutz.pdf';
+import { Link } from 'react-router-dom'
 
 function About() {
   const [show, setShow] = useState(false);
@@ -65,6 +65,10 @@ function About() {
     },
     linkItem: {
       margin: '0px 12px',
+    },
+    impressum: {
+      display: 'inline-block',
+      margin: '20px 0px',
     }
   };
 
@@ -96,19 +100,7 @@ function About() {
           <p>
             Wir sind ein Team aus Musiker*innen und Musikwissenschaftler*innen, die selber von Machtmissbrauch betroffen waren und die diese Gewalt innerhalb der Hochschulen endlich sichtbar machen wollen.
           </p>
-          <h4>Impressum</h4>
-            <p>
-              Elisabeth Treydte<br />
-              Fußhain 14<br />
-              61197 Florstadt <br />
-            </p>
-          <h4>Kontakt</h4>
-            <p>
-              E-mail: info@mappingmetooinmusic.de <br />
-            </p>
-          <h4>Datenschutzerklärung</h4>
-            <p><a href={Datenschutz} target='_blank'>Herunterladen</a></p>
-          <br />
+          <Link style={styles.impressum} to="/impressum">Impressum</Link>
           <Box sx={styles.linkbar}>
               <Box sx={styles.linkItems}>
                 <IconButton href="mailto:info@mappingmetooinmusic.de"><EmailIcon sx={{color: '#213547'}} /></IconButton>
